@@ -4,19 +4,46 @@
 <meta charset="UTF-8">
 <title>Тестовый сайт</title>
 <link href="stules.css" rel="stylesheet" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 </head>
 
 
   <body>
+
+    <header class="header">
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $("#menu").on("click","a", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'),
+                       top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 1500);
+               });
+           });
+           </script>
+           
+           <nav id="menu">
+                   <a href="#jak1">Хобби</a> |
+                   <a href="#jak2">Образование</a>
+           </nav>
+
+	</header>
+
+
     <!--Шапка с инфой обо мне-->
-    <div class="container">
-        <!--Аватар-->
-        <div class="info">
+        <!--Основная информация-->
+        <div class="container info">
+
             
+
+            <!--Аватар-->
             <div class="avatar">
                 <img src="5424949720037569567_120.jpg" alt="cover" width="300" height="300" class="pic">
             </div>
-           
+            <!--Текст-->
+
             <div class="info-text">
                 <div class="info-name">
                     <h1>dohuyanevezuch</h1>
@@ -31,7 +58,7 @@
                 </div>
                 
                 <div class="info-text-second">
-                    <p>Люблю <strong><a href="https://vk.com/angelina.paradise">Ангелину</a></strong>, а так же изучать что-то новое и быть в курсе всех событий
+                    <p>Люблю изучать что-то новое и быть в курсе всех событий
                         электронники и программного обеспеычения</p>
                 </div>
                 
@@ -43,38 +70,48 @@
             </div>
         </div>
 
-        
-        <div class="card hobbies">
-            <h2>Мои хобби</h2>
-            <!--Список-->
-            <ul class="list">
-                <li>Обниматься с Ангелиной:з</li>
-                <li>Игры</li>
-                <li>Сериалы</li>
-                <li>Аниме</li>
-                <li>Манга</li>
-                <li>Рисовать</li>
-                <li>Кушать</li>
-                <li>Тату</li>
-                <li>Кальян</li>
-                <li>Комплектующие пк</li>
-            </ul>
+        <!--Разделительная линия 1-->
+        <hr class="hr-inclined-left">
+
+        <!--Хобби-->
+        <p id="jak1"></p>
+        <div class="container hob">
+            <div class="card hobbies">
+                <h2>Мои хобби</h2>
+                <!--Список-->
+                <ul class="list">
+                    <li>Игры</li>
+                    <li>Сериалы</li>
+                    <li>Аниме</li>
+                    <li>Манга</li>
+                    <li>Рисовать</li>
+                    <li>Кушать</li>
+                    <li>Тату</li>
+                    <li>Кальян</li>
+                    <li>Комплектующие пк</li>
+                </ul>
+            </div>
         </div>
 
+        <!--Разделительная линия 2-->
+        <hr class="hr-inclined-right">
+ 
+        <!--Таблица-->
+        <p id="jak2"></p>
+        <div class="container tabli">
+            <table class="card table">
+                <tr>
+                    <th>Образование</th> <th>Дата</th> <th>Направление</th>
+                </tr>
+                <tr>
+                    <td>Лицей №3</td> <td>2006 - 2017</td> <td>Инфо-математическое</td>
+                </tr>
+                <tr>
+                    <td>СПБГУТ</td> <td>2017 - 2021</td> <td>Инф. и выч. тех.</td>
+                </tr>
+            </table>
+        </div>
 
-        <table class="card table">
-            <tr>
-                <th>Образование</th> <th>Дата</th> <th>Направление</th>
-            </tr>
-            <tr>
-                <td>Лицей №3</td> <td>2006 - 2017</td> <td>Инфо-математическое</td>
-            </tr>
-            <tr>
-                <td>СПБГУТ</td> <td>2017 - 2021</td> <td>Инф. и выч. тех.</td>
-            </tr>
-        </table>
-
-    </div>
 
   </body>
 

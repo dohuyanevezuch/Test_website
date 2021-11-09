@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto+Mono:wght@300;600&display=swap');
 
+/*Основные настройки страницы*/
 body {   
     font-size: 20px;
     font-weight: normal;
     font-family: 'Roboto Mono', monospace;
-
+    color: white;
     background-color: #242424;
 }
 
+/*Настройки ссылок*/
 a{
     color: white;
     text-decoration: none;
@@ -16,26 +18,26 @@ a:hover{
     text-decoration: underline;
 }
 
-.container{
+/*Оформление инфо*/
+.container {
     max-width: 750px;
-    margin: auto;
-    padding: 20px;
-    background-color: #242424;
-    color: white;
-}
-
-.info {
     min-height: 100vh;
     justify-content: center;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /*padding-top: 25%;
-    padding-bottom: 20%;*/
 }
+
+#menu{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*Аватар*/
 .avatar{
     padding-bottom: 0px;
 }
+/*Анимация аватарки*/
 .info .avatar img{
     animation: fly 3s ease-in-out infinite;
 }
@@ -48,6 +50,21 @@ a:hover{
     }
 }
 
+/*анимация карточек*/
+.card {
+    margin-bottom: 30px ;
+    animation: flycard 3s ease-in-out infinite;
+}
+@keyframes flycard {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(23px);
+    }
+}
+
+/*оформление картинки аватарки*/
 .info .avatar .pic {
     border-radius: 50%;
     display: flex;
@@ -55,20 +72,19 @@ a:hover{
     margin-right: auto;
 }
 
+/*оформление текста в инфо*/
 .info .info-text {
     text-align: center;
     
 }
 
+/*оформление доп текста в инфо*/
 .info .info-text .info-text-second {
     font-style: italic;
     font-size: smaller;
 }
 
-.card {
-    margin-bottom: 30px ;
-}
-
+/*Оформление карты хобби*/
 .hobbies{
     padding-left: 5%;
     border-radius: 20px;
@@ -76,10 +92,11 @@ a:hover{
     padding-top: 3%;
     padding-bottom: 3%;
 }
+/*Правка списка в хобби*/
 .hobbies .list {
     padding-left: 2%;
 }
-
+/*Оформление таблицы*/
 .table {
     width: 100%;
     border-radius: 20px;
@@ -87,15 +104,34 @@ a:hover{
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
+/*Оформление доп строк в таблица*/
 .table td {
     padding-bottom: 10px;
 }
- 
+/*Оформление первого столбика в таблице*/
 .table td:nth-child(1){
     padding-left: 4.5%;
 }
+/*Оформление остальных столбиков в таблице*/
 .table td:nth-child(2), .table td:nth-child(3) {
     text-align: center;
     color: #86898f;
+}
+/*Оформление разделительной линии 1*/
+.hr-inclined-left{
+    margin: 25px 0 40px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333;
+    transform:rotate(2deg);
+}
+/*Оформление разделительной линии 2*/
+.hr-inclined-right {
+    margin: 25px 0 40px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333;
+    transform:rotate(-2deg);
 }
