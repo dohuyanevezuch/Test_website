@@ -4,7 +4,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+
     background-color: #242424;
 }
 
@@ -16,48 +16,23 @@ a:hover{
     text-decoration: underline;
 }
 
-/*.container{
+.container{
     max-width: 750px;
     margin: auto;
     padding: 20px;
     background-color: #242424;
     color: white;
-}*/
+}
 
 .info {
-    max-width: 750px;
     min-height: 100vh;
     justify-content: center;
     margin: auto;
     display: flex;
     flex-direction: column;
+    /*padding-top: 25%;
+    padding-bottom: 20%;*/
 }
-.hob {
-    max-width: 750px;
-    min-height: 100vh;
-    justify-content: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-.tabli {
-    max-width: 750px;
-    min-height: 100vh;
-    justify-content: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.fullscreen1 {
-    min-height: 80vh;
-    background:url("https://i.postimg.cc/fyYM6SYT/full.png") center / cover no-repeat fixed;
-}
-.fullscreen2 {
-    min-height: 80vh;
-    background:url("https://i.postimg.cc/fyYM6SYT/full.png") center / cover no-repeat fixed;
-}
-
 .avatar{
     padding-bottom: 0px;
 }
