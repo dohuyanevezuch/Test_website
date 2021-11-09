@@ -25,10 +25,17 @@ a:hover{
 }
 
 .info {
-    padding-top: 25%;
-    padding-bottom: 20%;
+    min-height: 100vh;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /*padding-top: 25%;
+    padding-bottom: 20%;*/
 }
-
+.avatar{
+    padding-bottom: 0px;
+}
 .info .avatar img{
     animation: fly 3s ease-in-out infinite;
 }
@@ -43,13 +50,12 @@ a:hover{
 
 .info .avatar .pic {
     border-radius: 50%;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
 .info .info-text {
-    margin: auto;
     text-align: center;
     
 }
@@ -92,4 +98,4 @@ a:hover{
 .table td:nth-child(2), .table td:nth-child(3) {
     text-align: center;
     color: #86898f;
-  }
+}
